@@ -31,7 +31,7 @@ UseDNS no
 Subsystem	sftp	internal-sftp
 END
 
-cat <<END > /etc/profile.d/sniff_dock_profile
+cat <<END > /etc/profile.d/sniff_dock_profile.sh
 alias ll='ls -l --color=auto'
 
 END
