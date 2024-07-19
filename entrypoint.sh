@@ -10,7 +10,7 @@ mkdir -p /etc/ssh/sshd_config.d
 [ ! -e "/mnt/ssh/ssh_host_ed25519_key" ] && { \
     ssh-keygen -t RSA -f /etc/ssh/keys/ssh_host_rsa_key -N "" -q ; \
     ssh-keygen -t ECDSA -f /etc/ssh/keys/ssh_host_ecdsa_key -N "" -q ; \
-    ssh-keygen -t ED25519 -f /etc/ssh/keys/ssh_host_ed25519_key -N "" -q }
+    ssh-keygen -t ED25519 -f /etc/ssh/keys/ssh_host_ed25519_key -N "" -q ; }
 
 
 chmod 0600 /etc/ssh/keys/*
